@@ -1,0 +1,94 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff0000; /* Red background */
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #000000; /* Black text */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Container Styles */
+.container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Headings */
+h2 {
+    color: #ff0000; /* Red text */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ff0000; /* Red underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Offer and Exercises Sections */
+.offer, .exercises {
+    margin-bottom: 40px;
+}
+
+.offer ul, .exercises ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.offer ul li, .exercises ul li {
+    background-color: #ff0000; /* Red background */
+    color: #000000; /* Black text */
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer ul li:hover, .exercises ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff0000; /* Red background */
+    padding: 20px;
+    text-align: center;
+    color: #000000; /* Black text */
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
