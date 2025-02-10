@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MONSTERFITNESS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="Loginbody">
+    
+    <nav>
+        <div class="nav__logo">
+            <a href="index.html"><img src="assets/images/Logo/LOGO2.png" alt="logo" /></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="#">Program</a></li>
+            <li class="link"><a href="#">Service</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Community</a></li>
+        </ul>
+        <button class="btn" onclick="window.location.href='index.html'">Back to Home</button>
+    </nav>
+    <hr style="color: #e31d1d;">
+    <div class="wrapper">
+        <form action="">
+            <h1>LOGIN</h1>
+            <div class="input-box ">
+                <input type="text" placeholder="Email" required>
+                <i id="use" style="position: absolute;" class='bx bxs-user'></i>
+                <style>
+                    #use{
+                        left: 340px;
+                        right: 90px;
+                       top: 90px;
+                       font-size: 20px;
+                       transform: translateY(32px);
+                       
+                    }
+                </style>
+            </div>
+            <div class="input-box ">
+                <input type="password" placeholder="password" required>
+                <i style="position: absolute;" class='bx bx-lock-alt' ></i>
+                <style>  i{
+                    right: 15px;
+                  top: 205px;
+                  font-size: 20px;
+                  transform: translateY(2px);
+                  transform: translateX(-45px);
+                }</style>
+               
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn" value="submit" onclick="window.location.href='joining.html'">Login</button>
+
+           <div class="register-link">
+            <p style="color: rgb(255, 255, 255);">Don't have an account? <a href="singup.html" style="color: #e31d1d;">Sign up</a></p>
+           </div>
+        </form>
+
+    </div>
+    <audio id="Song" autoplay> 
+        <source src="assets/voices/וידאו ללא כותרת - נוצר באמצעות Clipchamp.mp4"type="audio/mp4">
+    </audio>
+
+</body>
+<style>
+    #Loginbody{
+  background-position: center;
+  background-image: url(/assets/images/Covers/aronldgray.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size:  cover;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .wrapper{
+        width: 420px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 2);
+        box-shadow: 0 0 10px rgba(0, 0,0, 2);
+        color: white;
+        border-radius: 2rem;
+        position: relative;
+        left: 670px;
+        top: 150px;
+        padding: 30px 40px ;
+      
+    }
+    .wrapper h1{
+    
+        font-size: 36px;
+        text-align: center;
+    }
+    .wrapper .input-box{
+        width: 100%;
+        height: 50px;
+        margin: 36px 0;
+     
+    }
+    .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 2);
+        border-radius: 40px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px 45px 20px 20px;
+    }
+    .input-box input::placeholder{
+        color: #fff;
+    }
+    .wrapper .remember-forgot{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+    }
+    .remember-forgot a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .remember-forgot a:hover{
+        text-decoration: underline;
+
+    }
+    .wrapper .btn{
+        margin-left: 20px;
+        justify-content: center;
+        width: 90%;
+        height: 45px;
+        outline: none;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 400;
+
+    }
+    .wrapper .register-link{
+        font-size: 14.5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .register-link p a{
+    font-weight:700;
+    }
+    .register-link p a:hover{
+        text-decoration: underline;
+    }
+    #Song{
+        background: transparent;
+    }
+</style>
+
+</html>

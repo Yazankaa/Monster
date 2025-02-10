@@ -1,0 +1,231 @@
+       
+.home-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #040404; 
+    color: #ffffff; 
+    padding: 20px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(254, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #700909; 
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #333;
+        }
+        header {
+            background-color: #ff0000;
+            color: rgb(255, 255, 255);
+            padding: 50px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .exercise {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #f9f9f9;
+            border-radius: 8px;
+            background-color: #f4f4f4;
+        }
+        .exercise h2 {
+            margin-top: 0;
+            color: #ff0000;
+        }
+        .exercise p {
+            margin: 10px 0;
+        }
+        .exercise-icon {
+            font-size: 2rem;
+            color: #ff0000;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff0000;
+            color: rgb(218, 218, 218);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+          }
+          .btn {
+            background-color: #e31d1d;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+          .btn:hover {
+            background-color: #e31d1d;
+          }
+          .section__container {
+            padding: 4rem 1rem;
+          }
+          .section__header {
+            font-size: 2.5rem;
+            color:#e31d1d;
+            margin-bottom: 1rem;
+          }
+          .section__subheader {
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+          }
+          .explore__card, .class__content, .join__card, .price__card, .review__content {
+            background-color: #2a2a2a;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+          }
+          .explore__card h4, .join__card h4, .price__card h4 {
+            color:#e31d1d;
+          }
+          .explore__card a, .join__card a, .price__card a {
+            color: #e31d1d;
+            text-decoration: none;
+          }
+          .explore__card a:hover, .join__card a:hover, .price__card a:hover {
+            text-decoration: underline;
+          }
+          .footer__container {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+          }
+          .footer__socials a {
+            color: #e31d1d;
+            margin: 0 0.5rem;
+          }
+          .footer__socials a:hover {
+            color: #e31d1d;
+          }
+     
+      
+      header {
+        background-color: #e31d1d; 
+        padding: 20px;
+        text-align: center;
+      }
+      
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+      
+      main {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh; 
+      }
+      
+      .exercises {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      
+      .exercise {
+        background-color: #1a1a1a; 
+        border-radius: 10px;
+        padding: 15px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+      
+      .exercise:hover {
+        transform: scale(1.05); 
+      }
+      
+      .exercise img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .exercise h3 {
+        color: #e31d1d; 
+        margin: 10px 0;
+      }
+      
+      .exercise p {
+        font-size: 0.9em;
+        color: #cccccc;
+      }
+      
+      footer {
+        background-color: #e31d1d; 
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+      #Back{
+        background-color: #e31d1d;
+        text-align: center;
+       margin: -80px;
+        margin-bottom: 20px;
+        padding: 35px;
+      }
+      #Arms{
+        background-color: #e31d1d;
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 35px;
+      }
+      .exercises .exercise h1#sholders{
+        background-color: #e31d1d;
+        text-align: center;
+        margin: -90;
+        margin-bottom: 20px;
+        padding: 35px;
+        
+      }
+      #shoulders {
+        background-color: #e31d1d;
+        text-align: center;
+        margin: -90;
+        margin-bottom: 20px;
+        padding: 35px;
+        
+      }
+      .btn{
+        background-color: #e31d1d;
+        text-align: center;
+        margin-bottom: 5rem;
+        padding: 20px;
+        
+      }

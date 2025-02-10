@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <header>
+        
+        <a href="index.html" class="home-button">Home</a>
+    </header>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    <style>
+        
+.home-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #040404; 
+    color: #ffffff; 
+    padding: 20px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(254, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #700909; 
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #333;
+        }
+        header {
+            background-color: #ff0000;
+            color: rgb(255, 255, 255);
+            padding: 50px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .exercise {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #f9f9f9;
+            border-radius: 8px;
+            background-color: #f4f4f4;
+        }
+        .exercise h2 {
+            margin-top: 0;
+            color: #ff0000;
+        }
+        .exercise p {
+            margin: 10px 0;
+        }
+        .exercise-icon {
+            font-size: 2rem;
+            color: #ff0000;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff0000;
+            color: rgb(218, 218, 218);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <h1 id="ex"><i class="fas fa-dumbbell"></i> Gym Exercises</h1>
+        <p>Your guide to effective workouts</p>
+        <style>
+          #ex{
+            line-height: 0px;
+          }
+        </style>
+    </header>
+   
+
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Exercises | Monster Fitness</title>
+     
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+      .btn {
+        background-color: #e31d1d;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .btn:hover {
+        background-color: #e31d1d;
+      }
+      .section__container {
+        padding: 4rem 1rem;
+      }
+      .section__header {
+        font-size: 2.5rem;
+        color:#e31d1d;
+        margin-bottom: 1rem;
+      }
+      .section__subheader {
+        font-size: 1.2rem;
+        color: #cccccc;
+        margin-bottom: 2rem;
+      }
+      .explore__card, .class__content, .join__card, .price__card, .review__content {
+        background-color: #2a2a2a;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+      .explore__card h4, .join__card h4, .price__card h4 {
+        color:#e31d1d;
+      }
+      .explore__card a, .join__card a, .price__card a {
+        color: #e31d1d;
+        text-decoration: none;
+      }
+      .explore__card a:hover, .join__card a:hover, .price__card a:hover {
+        text-decoration: underline;
+      }
+      .footer__container {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+      .footer__socials a {
+        color: #e31d1d;
+        margin: 0 0.5rem;
+      }
+      .footer__socials a:hover {
+        color: #e31d1d;
+      }
+ 
+  
+  header {
+    background-color: #e31d1d; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; 
+  }
+  
+  .exercises {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .exercise {
+    background-color: #1a1a1a; 
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .exercise:hover {
+    transform: scale(1.05); 
+  }
+  
+  .exercise img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .exercise h3 {
+    color: #e31d1d; 
+    margin: 10px 0;
+  }
+  
+  .exercise p {
+    font-size: 0.9em;
+    color: #cccccc;
+  }
+  
+  footer {
+    background-color: #e31d1d; 
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  
+  
+  
+      
+    </style>
+    
+  </head>
+  <body>
+    
+   
+<html lang="en">
+   
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale5.0">
+    <title>Gym Exercises</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+
+
+
+<body>
+    
+
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chest Exercises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chest Exercises</h1>
+    </header>
+
+    <main>
+        <section class="exercises">
+            <div class="exercise">
+                <img src= "assets/images/Chest/chest press.gif" Workout Routine.jpg alt="Bench Press">
+                <h3>Bench Press</h3>
+                <p>Lie on a bench and press a barbell upwards to strengthen your chest.</p>
+            </div>
+
+            <div class="exercise">
+                <img src= "assets/images/Chest/incline dumbblle.gif"Incline Dumbbell Press">
+                <h3>Incline Dumbbell Press</h3>
+                <p>Perform a chest press on an inclined bench to target the upper chest.</p>
+            </div>
+
+            <div class="exercise">
+                <img src="assets/images/Chest/Chest fly.gif" alt="Chest Flys">
+                <h3>Chest Flys</h3>
+                <p>Use dumbbells to perform a fly motion, stretching and contracting the chest muscles.</p>
+            </div>
+
+            <div class="exercise">
+                <img src="assets/images/Chest/incline fly.gif" alt="Push-Ups">
+                <h3>Upper Fly-Chest</h3>
+                <p>A bodyweight exercise that strengthens the upper chest</p>
+            </div>
+            <div class="exercise">
+              <img src="assets/images/Chest/decline fly.gif" alt="Fly-Chest">
+              <h3>Decline Fly-Chest</h3>
+              <p>The decline cable fly is a variation of the cable chest fly and an exercise used to strengthen the pushing muscles of the body including the chest, triceps, and shoulders</p>
+          </div>
+        </section>
+    </main>
+  
+    <h1 id="Back">Back Workouts</h1>
+    <style>
+      #Back{
+        background-color: #e31d1d;
+        text-align: center;
+       margin: -80px;
+        margin-bottom: 20px;
+        padding: 35px;
+      }
+    </style>
+   
+    <section class="exercises">
+        
+        <div class="exercise">
+            <img src="assets/images/Back/deadlift.gif" alt="Deadlifts">
+            <h3>Deadlifts</h3>
+            <p>Lift a barbell from the ground to hip level to strengthen your lower back and legs.</p>
+        </div>
+
+        <div class="exercise">
+            <img src="assets/images/Back/Close grip.gif" alt="Pull-Ups">
+            <h3>Close Grip-Cable</h3>
+            <p>Close grip pull-ups primarily target the lower and mid-lat muscles, helping to develop thickness and width in your back <br>
+               This variation also engages your biceps to a greater extent.</p>
+        </div>
+
+        <div class="exercise">
+            <img src="assets/images/Back/74685a8a1b44b902c9d3ac1404844e88.gif" alt="Bent-Over Rows">
+            <h3>PullOver- cable</h3>
+            <p>Bend over and pull a barbell towards your torso to work your middle back.</p>
+        </div>
+
+        <div class="exercise">
+            <img src="assets/images/Back/pulldown1.gif" alt="Lat Pulldowns">
+            <h3>Lat Pulldowns</h3>
+            <p>The lat pulldown can be done as part of an upper-body strength workout.</p>
+        </div>
+        <div class="exercise">
+          <img src="assets/images/Back/closegrippulldown.gif" alt="Close grip pulldown">
+          <h3>Close Grip-Pulldowns</h3>
+          <p>The close-grip lat pulldown is a back exercise that primarily trains the latissimus dorsi, or “lats.”<br>
+             You perform it on a lat pulldown machine using a V-bar attachment, which allows for a narrow hand position and neutral grip (palms facing each other).</p>
+      </div>
+    </section>
+    
+    <h1 id="Arms">Arms Workouts</h1>
+    <style>
+      #Arms{
+        background-color: #e31d1d;
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 35px;
+      }
+    </style>
+
+    <main>
+      
+    <section class="exercises">
+      <div class="exercise">
+        <img src="assets/images/Arms/Hammer.gif" alt="">
+        <h3>Hammer Curls-Biceps</h3>
+        <p>
+          Despite their somewhat obscure reputation, hammer curls aren’t just for gym enthusiasts.
+           This exercise can benefit anyone wanting to improve their ability to perform the physical tasks of daily living.
+           Here’s a detailed list of benefits:
+        </p>
+
+      </div>
+      <div class="exercise">
+        <img src="assets/images/Arms/bieW.gif" alt="">
+        <h3>EZ barbell Curl</h3>
+        <p>
+          Sit at a preacher bench and adjust the height so that your armpits touch the top of the bench.<br>
+          Grasp an EZ-curl bar at shoulder width with arms extended (but allow a slight bend at the elbows).<br>
+          Curl the bar, keeping the backs of your arms against the bench.
+        </p>
+
+      </div>
+      <div class="exercise">
+        <img src="assets/images/Arms/e0314fac76102e06351e7392d67c1571.gif" alt="">
+        <h3>Overhead-Triceps Cable</h3>
+        <p>
+          Stand with your feet hip-width apart, with a soft bend in your knees and core engaged, holding the cable in each hand.<br>
+           Lift the cable above your head until your arms are straight, taking care not to lock your elbows.<br>
+           Extend straight overhead to complete one rep and repeat. <br>
+           Be sure to keep your head aligned with your chest, and try to let your shoulders stay relaxed throughout the movement.
+        </p>
+
+
+      </div>
+      <div class="exercise">
+        <img src="assets/images/Arms/Tric cable pushdown.gif" alt="">
+        <h3>Triceps-Pushdown</h3>
+        <p>
+          Attach a rope handle to the top pulley of a cable station and hold an end in each hand with elbows flexed.<br>
+          Allow your elbows to drift forward a bit as you extend them and then let them drift backward as you lower the weight.
+        </p>
+      </div>
+      <div class="exercise">
+        <img src="assets/images/Arms/dips.gif" alt="">
+        <h3>Triceps-Dips</h3>
+        <p>
+          Strengthens Multiple Muscle Groups : Dips primarily target the triceps, chest, and shoulders but also engage the core and back muscles.
+
+
+      </div>
+
+    </section>
+    </main>
+    
+    <h1 id="shoulders">Shoulders && Legs Exercises</h1>
+    <style>
+     #shoulders {
+        background-color: #e31d1d;
+        text-align: center;
+        margin: -90;
+        margin-bottom: 20px;
+        padding: 35px;
+        
+      }
+    </style>
+     <section id="legs" class="exercises">
+      <div class="exercise">
+        <img src="assets/images/Legs&shoulders/soulder press.gif" alt="">
+        <h3>Soulder Press</h3>
+        <p>
+          Along with building anterior, medial and rear deltoid strength, this exercise also targets the upper <br>
+           Sitting, hold a dumbbell in each hand, and raise both weights to shoulder level with palms facing out and elbows bent.<br>
+           Press the weights up and toward each other as you straighten your arms
+        </p>
+      </div>
+          <div class="exercise">
+            <img src="assets/images/Legs&shoulders/Shoulder.gif" alt="">
+            <h3>Dumbbell lateral raise</h3>
+            <p>
+              Lifting laterally activates your posterior deltoids and upper-back muscles.<br>
+               Standing, hold dumbbells with your palms facing each other.<br>
+               Keeping your elbows and knees slightly bent, raise your arms out from your sides in wide arcs to about shoulder level. Slowly return to the starting position.
+    
+            </p>
+            </div>
+            <div class="exercise">
+              <img src="assets/images/Legs&shoulders/Extention.gif" alt="">
+              <h3>Leg Extension</h3>
+              <p>
+                Sit in a leg extension machine with your ankles against the lower pad. Use your quads to push forwards and straighten your legs in front of you, then return to the start position.
+              </p>
+              </div>
+              <div class="exercise">
+                <img src="assets/images/Legs&shoulders/Leg press.gif" alt="">
+                <h3>Dumbbell lateral raise</h3>
+                <p>
+                  You can use the seated leg press or 45-degree leg press. Begin with your feet planted in the middle of the foot pad, about shoulder-width apart with your back flat against the seat.
+                   </p>
+                </div>
+                <div class="exercise">
+                  <img src="assets/images/Legs&shoulders/Sqout.gif" alt="">
+                  <h3>Regular Squat</h3>
+                  <p>
+                    Target your posterior chain — or the back of your body, including the glutes and hamstrings — with a back squat.
+                 </p>
+                  </div>
+                 
+                  <button class="btn" onclick="window.location.href='login.html'" >To see all the Exercises join us now !!
+                  </button>
+                  <style>
+                   
+                  .btn{
+                      background-color: #e31d1d;
+                      text-align: center;
+                      margin-bottom: 5rem;
+                      padding: 20px;
+                      
+                    }
+                  </style>
+  
+
+
+
+
+
+
+</body>
+</html>
+
+   
+</body>
+
+</html>
+
+
