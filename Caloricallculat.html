@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<nav>
+
+
+     <button class="btn" onclick="window.location.href='index.html'">Back to Home</button>
+     </nav>
+     
+</h1>
+
+<div class="panel2" style="padding:10px;">
+<form action="calorie-calculator.html" name="calform">
+    <h1 id="calori" >Calorie Calculator</h1>
+<table id="calinputtable" width="420">
+<tr>
+	<td width="50">Age</td>
+	<td width="370"><input type="text" name="cage" id="cage" value="25" class="inhalf" onKeyUp="iptfieldCheck(this, 'r', 'pn');"> ages 15 - 80</td>
+</tr>
+<tr>
+	<td>Gender</td>
+	<td><label for="csex1" class="cbcontainer"><input type="radio" name="csex" id="csex1" value="m" checked /><span class="rbmark"></span> male</label> 
+        &nbsp; <label for="csex2" class="cbcontainer"><input type="radio" name="csex" id="csex2" value="f"  /><span class="rbmark"></span> female</label></td>
+</tr>
+</table>
+<table width="420" id="standardheightweight">
+<tr>
+	<td width="50">Height</td>
+	<td width="370">
+		<table border="0" cellpadding="0" cellspacing="0"><tr><td>
+			<input type="text" name="cheightfeet" id="cheightfeet" value="5" class="inhalf inuifoot" onKeyUp="iptfieldCheck(this, '', 'pzn');"><span class="inuifootspan">feet</span>
+		</td><td>&nbsp;</td><td>
+			<input type="text" name="cheightinch" id="cheightinch" value="10" class="inhalf inuiinch" onKeyUp="iptfieldCheck(this, '', 'pzn');"><span class="inuiinchspan">inches</span>
+		</td></tr></table>
+	</td>
+</tr>
+<tr>
+	<td>Weight</td>
+	<td><input type="text" name="cpound" id="cpound" value="165" class="infull inuipound" onKeyUp="iptfieldCheck(this, 'r', 'pn');"><span class="inuipoundspan">pounds</span></td>
+</tr>
+</table>
+<table width="420" id="metricheightweight">
+<tr>
+	<td width="50">Height</td>
+	<td width="370"><input type="text" name="cheightmeter" id="cheightmeter" value="180" class="infull inuick" onKeyUp="iptfieldCheck(this, 'r', 'pn');"><span class="inuickspan"> cm</span></td>
+</tr>
+<tr id="metricweight">
+	<td>Weight</td>
+	<td><input type="text" name="ckg" id="ckg" value="65" class="infull inuick" onKeyUp="iptfieldCheck(this, 'r', 'pn');"><span class="inuickspan"> kg</span></td>
+</tr>
+</table>
+<table width="500">
+<tr>
+	<td width="50">Activity</td>
+	<td width="450">
+		<select id="cactivity" name="cactivity">
+			<option value="1" >Basal Metabolic Rate (BMR)</option>
+			<option value="1.2" >Sedentary: little or no exercise</option>
+			<option value="1.375" >Light: exercise 1-3 times/week</option>
+			<option value="1.465" selected>Moderate: exercise 4-5 times/week</option>
+			<option value="1.55" >Active: daily exercise or intense exercise 3-4 times/week</option>
+			<option value="1.725" >Very Active: intense exercise 6-7 times/week</option>
+			<option value="1.9" >Extra Active: very intense exercise daily, or physical job</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td width="50">&nbsp;</td>
+	<td width="450">
+		<div id="ccsettingtitle" style="margin: 10px 0px;"><b><a href="#" onclick="cshmoreoption(1);return false;">+ Settings</a></b></div>
+		<div id="ccsettingcontent" style="display: none;">
+			<input type="hidden" name="cmop" id="cmoreoption" value="0">
+			<div><b>Results unit:</b></div>
+			<div>
+				<label for="coutunit1" class="cbcontainer"><input type="radio" name="coutunit" id="coutunit1" value="c" checked /><span class="rbmark"></span> Calories</label> &nbsp;
+				<label for="coutunit2" class="cbcontainer"><input type="radio" name="coutunit" id="coutunit2" value="j"  /><span class="rbmark"></span> Kilojoules</label>
+			</div>
+
+			<div style="padding-top:15px;"><b>BMR estimation formula:</b> <a href="#reference"><img class="ttimg" ></a></div>
+			<div>
+				<div><label for="cformula1" class="cbcontainer"><input type="radio" name="cformula" id="cformula1" value="m" checked /><span class="rbmark"></span> Mifflin St Jeor</label></div>
+				<div><label for="cformula3" class="cbcontainer"><input type="radio" name="cformula" id="cformula3" value="h"  /><span class="rbmark"></span> Revised Harris-Benedict</label></div>
+				<div><label for="cformula2" class="cbcontainer"><input type="radio" name="cformula" id="cformula2" value="k"  /><span class="rbmark"></span> Katch-McArdle</label> &nbsp; <a href="/body-fat-calculator.html">Body Fat:</a> <input type="text" name="cfatpct" value="20" class="in4char inpct" onKeyUp="iptfieldCheck(this, '', 'pn');">%</div>
+			</div>
+		</div>
+	</td>
+</tr>
+<tr>
+	<td width="50">&nbsp;</td>
+	<td width="450">
+		<input name="printit" value="0" type="hidden">
+		<input type="hidden" name="ctype" id="ctype" value="standard">
+		<input type="submit" name="x" value="Calculate">
+		<input type="button" value="Clear" onClick="clearForm(document.calform);">
+	</td>
+</tr>
+</table></form>
+<ul style="margin-top:0px;margin-left:-20px;">
+	<li class="smalltext"><b>Exercise:</b> 15-30 minutes of elevated heart rate activity.</li>
+	<li class="smalltext"><b>Intense exercise:</b> 45-120 minutes of elevated heart rate activity.</li>
+	<li class="smalltext"><b>Very intense exercise:</b> 2+ hours of elevated heart rate activity.</li>
+</ul>
+</div>
+<script>
+    function cshweightgaininfo(optVar){
+        if (optVar==1){
+            document.getElementById("weightgaininfo").style.display = 'block';
+            document.getElementById("weightgaininfolink").innerHTML = "<a href='#' onClick='return cshweightgaininfo(0);'>Hide info for weight gain</a>";
+        }else{
+            document.getElementById("weightgaininfo").style.display = 'none';
+            document.getElementById("weightgaininfolink").innerHTML = "<a href='#' onClick='return cshweightgaininfo(1);'>Show info for weight gain</a>";
+        }
+        return false;
+    }
+    function cshmoreoption(optVar){
+        if (optVar==1){
+            document.getElementById("ccsettingcontent").style.display = 'block';
+            document.getElementById("cmoreoption").value = "1";
+            document.getElementById("ccsettingtitle").innerHTML = "<b><a href=\"#\" onclick=\"return cshmoreoption(0);\">- Customizes </a></b>";
+        }else{
+            document.getElementById("ccsettingcontent").style.display = 'none';
+            document.getElementById("cmoreoption").value = "0";
+            document.getElementById("ccsettingtitle").innerHTML = "<b><a href=\"#\" onclick=\"return cshmoreoption(1);\">+ Customizes </a></b>";
+        }
+        return false;
+    }
+    cshmoreoption(0);
+    function popMenu(inval, insubmit){
+        htmlVal = "";
+        if (inval == "metric"){
+            htmlVal = htmlVal + "<li><a href=\"#\" onclick=\"return popMenu('standard',1);\">US Units</a></li> <li id='menuon'><a href=\"#\" onclick=\"return popMenu('metric',1);\">Metric Units</a></li> <li><a href=\"#\" onclick=\"return popMenu('other');\">Other Units</a></li>";
+            document.getElementById("ctype").value="metric";
+            document.getElementById("standardheightweight").style.display = 'none';
+            document.getElementById("metricheightweight").style.display = 'block';
+            htmlVal = "<ul>" + htmlVal + "</ul>";
+            document.getElementById("ucframe").innerHTML ="";
+            if (insubmit==1) document.calform.submit();
+        }else if (inval == "standard"){
+            htmlVal = htmlVal + "<li id='menuon'><a href=\"#\" onclick=\"return popMenu('standard',1);\">US Units</a></li> <li><a href=\"#\" onclick=\"return popMenu('metric',1);\">Metric Units</a></li> <li><a href=\"#\" onclick=\"return popMenu('other');\">Other Units</a></li>";
+            document.getElementById("ctype").value="standard";
+            document.getElementById("standardheightweight").style.display = 'block';
+            document.getElementById("metricheightweight").style.display = 'none';
+            htmlVal = "<ul>" + htmlVal + "</ul>";
+            document.getElementById("ucframe").innerHTML ="";
+            if (insubmit==1) document.calform.submit();
+        }else{
+            htmlVal = document.getElementById("topmenu").innerHTML ;
+            document.getElementById("ucframe").innerHTML = "<iframe src=\"/converter/converter.php?type=\" style=\"overflow:hidden;width:100%\" width=\"100%\" height=\"238\" frameborder=\"NO\" scrolling=\"NO\" allowTransparency=\"true\" ></IFRAME>";
+        }
+        document.getElementById("topmenu").innerHTML = htmlVal;
+        return false;
+    }
+    popMenu("metric",0);
+    </script>
+
+
+</body>
+<style>
+   
+    .smalltext{
+        color: rgb(255, 255, 255);
+        margin: 15px;
+    }
+    body{
+        background-color: #1f2125;
+        background-position: center;
+        background-image: url(assets/images/Covers/gym1.jpg);
+        background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+       
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+    #cage{
+       
+        background-color: #e31d1d;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .csex{
+        background-color: #e31d1d;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    #ckg{
+
+        background-color: #e31d1d;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    #cheightmeter{
+        background-color: #e31d1d;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    #cactivity{
+        background-color: #e31d1d;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    #ctype{
+        background-color: #e31d1d;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    
+
+    }
+    .btn{
+        margin-left: 93.5rem;
+       top: 30px;
+       left: 20px;
+       position: absolute;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: #e31d1d;
+        color: #ffffff;
+        border: none;
+        padding: 18px ;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    #p1{
+        background-color: #e31d1d;
+                      text-align: center;
+                      font-family: 'Courier New', Courier, monospace;
+                      padding: 20px;
+                      font-size: large;
+    }
+    #calori{
+       
+        background-color: #1f2125;
+                      text-align: center;
+                      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                      margin-bottom: 1rem;
+                      padding: 20px;
+                    
+                      
+    }
+    .panel2{
+        background-color:#1f2125;
+        width: 35%;
+        margin: 10% auto 0 auto;
+         background-color:#1f2125;
+        width: 35%;
+        border: 2px solid rgba(255, 255, 255, 2);
+        box-shadow: 0 0 10px rgba(0, 0,0, 2);
+        color: white;
+        border-radius: 2rem;
+      
+    
+    }
+
+    .panel2 input, .panel2 select { max-width: 100%;}
+
+
+</style>
+</html>
